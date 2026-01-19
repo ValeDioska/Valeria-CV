@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f7fa;
+}
+
+.menu-navegacion {
+    background-color: #442b5c;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: 15px;
+    flex-wrap: wrap;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    font-size: 0.95rem;
+}
+
+nav a:hover {
+    background-color: #3498db;
+    transform: translateY(-2px);
+}
+
+.encabezado {
+    text-align: center;
+    margin: 30px 0;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.encabezado h1 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.subtitulo {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    font-weight: 300;
+}
+
+.contenido, .sobre-mi, .skills-section, .footer-section {
+    margin-bottom: 40px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    color: #2c3e50;
+    border-bottom: 3px solid #3498db;
+    padding-bottom: 12px;
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+}
+
+ul, ol {
+    padding-left: 25px;
+    margin-bottom: 25px;
+}
+
+li {
+    margin-bottom: 10px;
+    font-size: 1.05rem;
+}
+
+.contenido li strong {
+    color: #2c3e50;
+}
+
+.foto-perfil {
+    margin-bottom: 25px;
+}
+
+.foto-perfil img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 6px solid white;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.foto-perfil img:hover {
+    transform: scale(1.05);
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.skill-item {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    border: 1px solid #e9ecef;
+}
+
+.skill-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+.skill-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.skill-item p {
+    font-weight: 600;
+    color: #2c3e50;
+    font-size: 0.95rem;
+}
+
+.footer-section {
+    margin-top: 50px;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #442b5c;
+    color: white;
+    border-radius: 12px;
+}
+
+footer p {
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+footer a {
+    color: #2cc3aa;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 18px;
+    border: 2px solid #2cc3aa;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+footer a:hover {
+    background-color: #2cc3aa;
+    color: white;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav li {
+        margin: 5px 0;
+        width: 100%;
+        text-align: center;
+    }
+    
+    nav a {
+        display: block;
+        padding: 12px;
+    }
+    
+    .encabezado h1 {
+        font-size: 2.2rem;
+    }
+    
+    .subtitulo {
+        font-size: 1rem;
+    }
+    
+    .contenido, .sobre-mi, .skills-section, .footer-section {
+        padding: 20px;
+    }
+    
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    
+    .footer-links {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+    
+    .foto-perfil img {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .encabezado {
+        padding: 30px 15px;
+    }
+    
+    .encabezado h1 {
+        font-size: 1.8rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+}
